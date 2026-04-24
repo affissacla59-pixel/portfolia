@@ -1,0 +1,163 @@
+.ss {
+     background-color: #C9A84C;
+        border: none;
+        color: inherit;
+        margin-left: 0;
+        margin-right: 60px;
+        color: black;
+
+}
+.navimg {
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+}
+.titre{
+    color: #C9A84C;
+    font-size: 30px;
+    margin-left: 0;
+    margin-right: auto;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  padding: 1px;
+  align-items: center;
+  background: #0a0a0a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navul {
+  display: flex;
+  gap: 50px;
+  margin-left: 100px;
+  list-style: none;
+  margin-left: 0;
+    margin-right: auto;
+}
+
+.nava{
+    text-decoration: none;
+    color: #C9A84C;
+}
+.navbtn {
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .navbar {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between; /* ← AJOUTE CECI */
+        background: black;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .ss {
+        display: none;
+    }
+
+    .navimg {
+        margin-left: 0;
+        margin-right: 0;
+        width: 50px;
+        height: 50px;
+    }
+
+    .titre {
+        margin-left: 0;
+        margin-right: 0; /* ← CHANGE auto EN 0 */
+        flex: 1;         /* ← prend l'espace entre logo et burger */
+    }
+
+    .navul {
+        display: none;
+    }
+
+    .navbtn {
+        display: block;
+        background-color: transparent;
+        border: none;
+        color: inherit;
+        margin-left: 0;  /* ← CHANGE auto EN 0 */
+        margin-right: 0;
+    }
+
+    /* --- tout le reste de ton CSS reste exactement pareil --- */
+    .navburg .navul {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+    }
+    .burgvis .navul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        align-items: center;
+        gap: 50px;
+    }
+    .nava{
+        text-decoration: none;
+        color: #C9A84C;
+        font-size: 30px;
+    }
+
+    
+    
+    .navbtn-bar,
+    .navbtn-bar::before,
+    .navbtn-bar::after {
+        display: block;
+        width: 40px;
+        height: 4px;
+        background-color: #C9A84C;
+        position: relative;
+        left: 0;
+
+    }
+    .navbtn-bar::after,
+    .navbtn-bar::before {
+        content: '';
+        position: absolute;
+        left: 0;
+    }
+    .navbtn-bar::before {
+        transform: translateY(-12px);
+    }
+      
+
+    .navbtn-bar::after{
+        transform: translateY(12px);
+    }
+    .burgvis .navbtn-bar{
+        width: 0;
+        background: transparent;
+    }
+    .burgvis .navbtn-bar::before{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .burgvis .navbtn-bar::after{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    
+
+    
+}

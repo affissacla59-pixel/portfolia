@@ -1,0 +1,21 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100%;
+    /* ✅ Supprime overflow-x: hidden et overflow-y: auto */
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Hide scrollbars */
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    scrollbar-width: none;
+}
