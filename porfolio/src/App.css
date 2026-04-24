@@ -44,13 +44,13 @@
   border: 1px solid #332d1e;
 }
 
-.hero-buttons {
+.hero-vv {
   display: flex;
   gap: 20px;
   justify-content: center;
 }
 
-.btn-gold {
+.va {
   background-color: #C9A84C;
   color: #000;
   border: none;
@@ -59,13 +59,15 @@
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 
-.btn-gold:hover {
+.va:hover {
   background-color: #ffffff;
+  color: #8a6d3b;
 }
 
-.btn-outline {
+.vs {
   background-color: transparent;
   color: #C9A84C;
   border: 2px solid #C9A84C;
@@ -74,9 +76,10 @@
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 
-.btn-outline:hover {
+.vs:hover {
   background-color: #C9A84C;
   color: #000;
 }
@@ -140,7 +143,7 @@
     padding: 40px 40px;
     min-height: auto;
   }
-  .btn-gold {
+  .va {
   background-color: #C9A84C;
   color: #000;
   border: none;
@@ -151,11 +154,12 @@
   transition: 0.3s;
 }
 
-.btn-gold:hover {
+.va:hover {
   background-color: #ffffff;
+  color:#C9A84C ;
 }
 
-.btn-outline {
+.vs {
   background-color: transparent;
   color: #C9A84C;
   border: 2px solid #C9A84C;
@@ -166,7 +170,7 @@
   transition: 0.3s;
 }
 
-.btn-outline:hover {
+.vs:hover {
   background-color: #C9A84C;
   color: #000;
 }

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import Porf from '../assets/Porf.png'
+import Porf1 from '../assets/Porf1.png'
 
 const projects = [
   {
@@ -10,19 +11,13 @@ const projects = [
     link: 'https://porfolia-red.vercel.app',
   },
   {
-    img: Porf,
+    img: Porf1,
     title: 'Portfolio AS',
-    description: 'Site personnel en React avec identité luxe dorée, animations fluides et design sur-mesure.',
-    tags: ['React', 'CSS'],
-    link: '#',
+    description: 'Site vitrine en HTML avec identité luxe dorée, animations fluides et design sur-mesure.',
+    tags: ['HTML', 'CSS'],
+    link: 'https://hakaton-corriger.vercel.app',
   },
-  {
-    img: Porf,
-    title: 'Portfolio AS',
-    description: 'Site personnel en React avec identité luxe dorée, animations fluides et design sur-mesure.',
-    tags: ['React', 'CSS'],
-    link: '#',
-  },
+ 
 ]
 
 function Projet() {

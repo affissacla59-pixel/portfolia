@@ -19,9 +19,9 @@ function Home() {
              Passionné par la création d'applications modernes, je conçois des 
              expériences digitales élégantes et performantes pour le web et mobile.
             </p>
-            <div className='hero-buttons'>
-            <button className='btn-gold'>Voir mes projets</button>
-            <button className='btn-outline'>Me contacter</button>
+            <div className='hero-vv'>
+          <a href="#services" className='va'>Voir mes projets</a>
+        <a href="#Contact" className='vs'>Me contacter</a>
 
             </div>
           </div>
